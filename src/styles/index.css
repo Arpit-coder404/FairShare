@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #101114;
+  color: #F4F3EE;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #17191F;
+}
+::-webkit-scrollbar-thumb {
+  background: #2E333E;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9296A2;
+}
+
+/* Glass & subtle card glow */
+.surface-glass {
+  background: rgba(32, 35, 43, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.surface-elevated {
+  background: #20232B;
+  border: 1px solid #2E333E;
+}
+
+.surface-midnight {
+  background: #17191F;
+  border: 1px solid #262A34;
+}
+
+/* Focus styles */
+*:focus-visible {
+  outline: 2px solid #C9FF5C;
+  outline-offset: 2px;
+}
+
